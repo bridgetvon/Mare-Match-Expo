@@ -2,21 +2,22 @@ import React from 'react'
 import { View, Text, Button } from 'react-native'
 import { global } from '../styles/global';
 
-const Task = ({ navigation, route }) => {
+const Stallion = ({ navigation, route }) => {
     const popHandler = () => {
         // navigation to go back
         navigation.pop()
     }
 
     const pushHandler = () => {
-        navigation.push("Home")
+        navigation.push("Stallions")
     }
     return (
         <View style={global.container}>
-            <Text>Review Details</Text>
-            <Text>{route.params.id}</Text>
-            <Text>{String(route.params.done)}</Text>
-            <Text>{route.params.task}</Text>
+            <Text>Review Stallions</Text>
+            <Text>{route.params.stallions}</Text>
+            <Text>{route.params.registry}</Text>
+            <Text>{route.params.contact}</Text>
+            <Text>{route.params.location}</Text>
             <Button title="go to home POP" onPress={popHandler} />
             <Text></Text>
             <Button title="go to home PUSH" onPress={pushHandler} />
@@ -24,4 +25,4 @@ const Task = ({ navigation, route }) => {
     )
 }
 
-export default Task;
+export default Stallion;

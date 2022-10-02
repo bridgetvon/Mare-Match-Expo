@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { View, Text, Button, FlatList } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 import { global } from '../styles/global';
 
